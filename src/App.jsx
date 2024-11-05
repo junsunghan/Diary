@@ -16,32 +16,7 @@ import { getEmotionImage } from "./util/get-emotion-image";
 // 2. "/new" : 새로운 일기를 작성하는 New 페이지
 // 3. "/diary" : 일기를 상세히 조회하는 Diary 페이지
 
-const mockData = [
-  {
-    id: 1,
-    createdDate: new Date("2024-10-27").getTime(),
-    emotionId: 1,
-    content: "1번 일기 내용",
-  },
-  {
-    id: 2,
-    createdDate: new Date("2024-10-28").getTime(),
-    emotionId: 2,
-    content: "2번 일기 내용",
-  },
-  {
-    id: 3,
-    createdDate: new Date("2024-10-27").getTime(),
-    emotionId: 1,
-    content: "3번 일기 내용",
-  },
-  {
-    id: 4,
-    createdDate: new Date("2024-09-17").getTime(),
-    emotionId: 2,
-    content: "4번 일기 내용",
-  },
-];
+const mockData = [];
 
 function reducer(state, action) {
   switch (action.type) {
